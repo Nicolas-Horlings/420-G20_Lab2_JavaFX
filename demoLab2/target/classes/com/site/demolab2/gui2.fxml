@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.site.demolab2.GUIController2" alignment="CENTER" spacing="10">
+    <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" layoutX="50.0" layoutY="80.0" text="User Name:"/>
+        <TextField GridPane.columnIndex="1" GridPane.columnSpan="2" fx:id="usernameField" prefWidth="200.0"/>
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0" layoutX="50.0" layoutY="50.0" text="Password:"/>
+        <PasswordField GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="2" fx:id="passwordField"
+                       prefWidth="200.0"/>
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2"  alignment="BOTTOM_CENTER" spacing="10">
+            <Button text="Submit" onAction="#handleSingIn" prefHeight="30" prefWidth="80" style="-fx-font-size: 14"/>
+            <Button text="Clear" onAction="#handleClear"/>
+            <Button text="Exit" onAction="#handleExit"/>
+            <Label fx:id="outputLabel" />
+        </HBox>
+    </GridPane>
+</VBox>

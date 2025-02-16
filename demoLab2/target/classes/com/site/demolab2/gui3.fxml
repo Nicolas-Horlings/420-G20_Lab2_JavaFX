@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.site.demolab2.GUIController3">
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="New"/>
+            <MenuItem text="Open File"/>
+            <MenuItem text="Exit" onAction="#handleExit"/>
+        </Menu>
+        <Menu text="Edit"/>
+        <Menu text="Help"/>
+    </MenuBar>
+</VBox>
+
+
